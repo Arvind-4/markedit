@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Mark Edit</title>
-    <link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href='./css/navbar.css'>
 
 </head>
+
 <body>
+	<header>
+		<div class="nav">
+			<input type="checkbox" id="nav-check">
+			<div class="nav-header">
+				<div class="nav-title">
+					<a href='/' style='color: white; text-decoration: none;'>
+						Mark Edit
+					</a>
+				</div>
+			</div>
+			<div class="nav-btn">
+				<label for="nav-check">
+					<span></span>
+					<span></span>
+					<span></span>
+				</label>
+			</div>
+
+			<div class="nav-links">
+				<a href="http://arvind11.ml/" target="_blank">About Me</a>
+			</div>
+		</div>
+	</header>
 	<textarea id="editor" autofocus></textarea>
 	<div id="compiled-markdown"></div>
 	<script src="https://unpkg.com/marked@0.3.6"></script>
-    <script src="./js/script.js"></script>
+	<script src="./js/script.js"></script>
 </body>
+
 </html>
