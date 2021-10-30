@@ -5,6 +5,7 @@
 	<title>Mark Edit</title>
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href='./css/navbar.css'>
+	<link rel="stylesheet" href="./css/footer.css">
 
 </head>
 
@@ -32,10 +33,29 @@
 			</div>
 		</div>
 	</header>
-	<textarea id="editor" autofocus></textarea>
-	<div id="compiled-markdown"></div>
+
+	<div class="grid-container" style="padding-top: 20px;">
+
+		<div class="grid-child purple" style="padding-left: 10px;">
+			<textarea id="editor" autofocus></textarea>
+		</div>
+
+		<div class="grid-child green">
+			<div id="compiled-markdown"></div>
+		</div>
+
+	</div>
+
+	|<div id="footer">
+		Mark Edit 2021
+	</div>
+
 	<script src="https://unpkg.com/marked@0.3.6"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.16.2/ckeditor.js'></script>
 	<script src="./js/script.js"></script>
+	<script src='./js/ckeditor.js'></script>
 </body>
+
+
 
 </html>
