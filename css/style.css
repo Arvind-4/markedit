@@ -7,12 +7,14 @@ body {
 
 #editor,
 #compiled-markdown {
+    padding: 10%;
     display: inline-block;
     width: 49%;
     height: 100vh;
     vertical-align: top;
     box-sizing: border-box;
     padding: 0 1.5em;
+    overflow: auto;
 }
 
 #editor {
