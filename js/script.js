@@ -1,10 +1,6 @@
-// const fs = require('fs')
-// const path = '../content.txt'
-
-var compiled = document.querySelector('#compiled-markdown')
 document.addEventListener('input', function (event) {
     if (!event.target.matches('#editor')) return
-    compiled.innerHTML = marked(event.target.value, { sanitize: true })
+    document.querySelector('#compiled-markdown').innerHTML = marked(event.target.value, { sanitize: true })
 }, false)
 
 document.getElementById('save-file').onclick = function () {
