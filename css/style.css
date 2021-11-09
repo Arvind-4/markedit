@@ -7,7 +7,6 @@ body {
 
 #editor,
 #compiled-markdown {
-    /* padding: 10%; */
     display: inline-block;
     width: 49%;
     height: 100vh;
