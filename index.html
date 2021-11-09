@@ -3,7 +3,7 @@
 
 <head>
 	<title>Mark Edit</title>
-	<link rel="stylesheet" href="./css/style.min.css">
+	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href='./css/navbar.min.css'>
 	<link rel="stylesheet" href='./css/footer.min.css'>
 
@@ -35,10 +35,16 @@
 					<span></span>
 				</label>
 			</div>
-
 			<div class="nav-links">
 				<a href="http://arvind11.ml/" target="_blank">About Me</a>
 			</div>
+			<div class="nav-links">
+				<a id='save-file'>Save File</a>
+			</div>
+			<!-- <div class="nav-links">
+				<a id='sample-file'>Sample File</a>
+			</div> -->
+			
 		</div>
 	</header>
 	<textarea id="editor" autofocus></textarea>
@@ -58,7 +64,8 @@
 
 	<script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/marked@0.3.6"></script>
-	<script src="./js/script.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js'></script>
+	<script src="./js/script.js"></script>
 </body>
 
 </html>
