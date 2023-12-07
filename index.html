@@ -1,71 +1,64 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markedit</title>
+    <link rel="icon" href="/favicon/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon/favicon.png" type="image/x-icon" />
 
-<head>
-	<title>Mark Edit</title>
-	<link rel="stylesheet" href="./css/style.min.css">
-	<link rel="stylesheet" href='./css/navbar.min.css'>
-	<link rel="stylesheet" href='./css/footer.min.css'>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Open-source In Browser Markdown editor."
+    />
+    <meta name="author" content="Arvind" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"
+    />
+  </head>
+  <body>
+    <body>
+      <header>
+        <div class="nav">
+          <input type="checkbox" id="nav-check" />
+          <div class="nav-header">
+            <div class="nav-title">
+              <a href="/" style="color: white; text-decoration: none">
+                Mark Edit
+              </a>
+            </div>
+          </div>
+          <div class="nav-btn">
+            <label for="nav-check">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+          <div class="nav-links">
+            <a href="https://arvind11.vercel.app" target="_blank">About Me</a>
+          </div>
+          <div class="nav-links">
+            <a id="save-file">Save File</a>
+          </div>
+        </div>
+      </header>
+      <textarea id="editor" autofocus></textarea>
+      <div id="compiled-markdown"></div>
 
-	<link rel="icon" href="./asserts/favicon/favicon.png" type="image/x-icon">
-	<link rel="shortcut icon" href="./asserts/favicon/favicon.png" type="image/x-icon">
-	<link rel="canonical" href="https://markedit.tk/">
+      <footer class="footer">
+        <div class="icons">
+          <p class="company-name">Mark Edit <br />&copy; 2021.</p>
+        </div>
+      </footer>
 
-	<meta charset="UTF-8">
-	<meta name="description" content="Open-source In Browser Markdown editor.">
-	<meta name="author" content="Arvind">
-	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
-</head>
-
-<body>
-	<header>
-		<div class="nav">
-			<input type="checkbox" id="nav-check">
-			<div class="nav-header">
-				<div class="nav-title">
-					<a href='/' style='color: white; text-decoration: none;'>
-						Mark Edit
-					</a>
-				</div>
-			</div>
-			<div class="nav-btn">
-				<label for="nav-check">
-					<span></span>
-					<span></span>
-					<span></span>
-				</label>
-			</div>
-			<div class="nav-links">
-				<a href="http://arvind11.ml/" target="_blank">About Me</a>
-			</div>
-			<div class="nav-links">
-				<a id='save-file'>Save File</a>
-			</div>
-			<!-- <div class="nav-links">
-				<a id='sample-file'>Sample File</a>
-			</div> -->
-			
-		</div>
-	</header>
-	<textarea id="editor" autofocus></textarea>
-	<div id="compiled-markdown"></div>
-
-	<footer class="footer">
-		<div class="icons">
-			<p class="company-name">
-				Mark Edit <br />&copy; 2021.
-			</p>
-			<!-- <a href="#"><i class="fab fa-facebook"></i></a>
-           <a href="#"><i class="fab fa-linkedin"></i></a>
-           <a href="#"><i class="fab fa-instagram"></i></a>
-           <a href="#"><i class="fab fa-twitter"></i></a> -->
-		</div>
-	</footer>
-
-	<script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/marked@0.3.6"></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js'></script>
-	<script src="./js/script.min.js"></script>
-</body>
-
+      <script
+        src="https://kit.fontawesome.com/66aa7c98b3.js"
+        crossorigin="anonymous"
+      ></script>
+    </body>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
